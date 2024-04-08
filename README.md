@@ -37,7 +37,6 @@ After the channel's data has been completely loaded, I will calculate the convol
 </p> 
 
 <strong> Step3: </strong>  
-  
 Once all pixel convolution results have been exported, the OUT_VALID signal wil become zero. 
 <p align="left">
   <img src="https://github.com/RexJian/Convolution-Circuit/blob/main/Wave/wave3.png" width="1500" height="150" alt="wave">
