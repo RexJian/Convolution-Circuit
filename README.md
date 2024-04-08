@@ -21,3 +21,16 @@ The input image has dimensions of 1x100x3, representing height, width, and the n
 | KERNEL | I | 8 | Input filter kernels, include three 1x7 depth-wise filter kernel and three point-wise filter kernels consecutively(both signed numbers)|
 | OUT_VALID | O | 1 | Asserted when OUT_DATA is valid |
 | OUT_DATA | O | 32 | The final output image (unsigned number) |
+
+## Simulate Waveform
+<strong> Step1: </strong>  
+When the IN_VALID and KERNEL_VALID signals are asserted, I record the channel's data and its corresponding kernel.
+<p align="left">
+  <img src="https://github.com/RexJian/Convolution-Circuit/blob/main/Wave/wave1.png" width="1000" height="200" alt="wave">
+</p> 
+<strong> Step2: </strong>  
+  
+After the channel's data has been completely loaded, I will calculate the convolution and apply the ReLU function. Once all channels have been fully calculated, the OUT_VALID signal will be asserted, and the results of the series of convolutions will be exported.
+<p align="left">
+  <img src="https://github.com/RexJian/Convolution-Circuit/blob/main/Wave/wave2.png" width="2000" height="150" alt="wave">
+</p> 
