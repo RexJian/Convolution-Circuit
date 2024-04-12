@@ -33,7 +33,7 @@ When the IN_VALID and KERNEL_VALID signals are asserted, I record the channel's 
   
 After the channel's data has been completely loaded, I will calculate the convolution and apply the ReLU function. Once all channels have been fully calculated, the OUT_VALID signal will be asserted, and the results of the series of convolutions will be exported.
 <p align="left">
-  <img src="https://github.com/RexJian/Convolution-Circuit/blob/main/Wave/wave2.png" width="1500" height="220" alt="wave">
+  <img src="https://github.com/RexJian/Convolution-Circuit/blob/main/Wave/wave2.png" width="1600" height="220" alt="wave">
 </p> 
 
 <strong> Step3: </strong>  
