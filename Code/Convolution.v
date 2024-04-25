@@ -7,19 +7,13 @@ IN DATA 3,
 IN VALID, KERNEL_VALID, KERNEL,
 OUT DATA, OUT_VALID
 );
-input
-input
-input
-input signed [7:0]
-KERNEL;
-output reg
-[31:0]
-CLK, RESET;
-[4:0] IN_DATA_1, IN_DATA_2, IN_DATA_3;
-IN_VALID, KERNEL_VALID;
-OUT_DATA;
-output reg
-OUT_VALID;
+input CLK, RESET;
+input IN_VALID, KERNEL_VALID;
+input [4:0] IN_DATA_1, IN_DATA_2, IN_DATA_3;
+input signed [7:0]KERNEL;
+output reg[31:0] OUT_DATA;
+output reg OUT_VALID;
+  
 //Write Your Design Here
 reg [4:0] datal_buf [0:6]; //save 7 data reg [4:0] data2_buf [0:13]; //save 14 data reg [4:0] data3_buf [0:20]; //save 21 data reg signed [11:0] conv1_ch1_mul [0:6]; reg signed [12:0] conv1_ch1_add1 [0:3];
 reg signed [13:0] conv1_ch1_add2 [0:1];
